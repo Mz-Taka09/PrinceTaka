@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perkenalan Diri - Nugroho</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #1e3a8a;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    #hero {
+      background: linear-gradient(135deg, #1d4ed8, #ffffff);
+      color: #000;
+      padding: 3rem 2rem;
+      overflow: hidden;
+    }
+    #hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #1e3a8a;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1.2s ease forwards;
+    }
+    #hero h2, #hero p, #hero .btn-cta {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1.2s ease forwards;
+    }
+    #hero h2 { animation-delay: 0.3s; }
+    #hero p { animation-delay: 0.6s; }
+    #hero .btn-cta { animation-delay: 0.9s; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    #about .biodata {
+      text-align: left;
+      max-width: 400px;
+      margin: 1rem auto;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    #contact p {
+      font-size: 1.1rem;
+    }
+    #contact a {
+      text-decoration: none;
+      color: #1d4ed8;
+    }
+    #contact i {
+      margin-right: 8px;
+      color: #1e3a8a;
+    }
+    footer {
+      background: #1e3a8a;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    .btn-cta {
+      display:inline-block;
+      margin-top:1rem;
+      padding:10px 20px;
+      background:#1e3a8a;
+      color:#fff;
+      border-radius:20px;
+      text-decoration:none;
+      font-weight:bold;
+      transition: 0.3s;
+    }
+    .btn-cta:hover {
+      background:#2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">Tentang Saya</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <img src="https://files.catbox.moe/512gu1.jpg" alt="Foto Nugroho">
+    <h2>Halo, Saya Nugroho</h2>
+    <p>Siswa SMKN 4 Klaten | Minat di IT & Pengembangan Website</p>
+    <a href="#contact" class="btn-cta">Hubungi Saya</a>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya siswa SMKN 4 Klaten yang memiliki minat dan ketertarikan di bidang IT dan pengembangan website.</p>
+    <div class="biodata">
+      <p><strong>Nama:</strong> Nugroho</p>
+      <p><strong>Kelas:</strong> XI TJKT 2</p>
+      <p><strong>Hobi:</strong> Joging dan Main Game</p>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact">
+    <h2>Kontak</h2>
+    <p><i class="fas fa-envelope"></i> 
+      <a href="mailto:nugnugroho525@gmail.com">nugnugroho525@gmail.com</a>
+    </p>
+    <p><i class="fab fa-whatsapp"></i> 
+      <a href="https://wa.me/6287741709308">087741709308</a>
+    </p>
+    <p><i class="fab fa-tiktok"></i> 
+      <a href="https://www.tiktok.com/@nugrohoo07" target="_blank">@nugrohoo07</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nugroho. Semua Hak Dilindungi.</p>
+  </footer>
+
+</body>
+  </html>
